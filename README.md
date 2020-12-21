@@ -31,7 +31,7 @@ RNDF 使用语义版本号来管理代码。语义版本号分为 X.Y.Z 三位�
 可以通过多种方法下载 RNDF：
 
 + [从 Github 下载]()
-+ 使用 npm 命令下载
++ 使用 npm 命令下载（暂时不可用）
   ```
   npm install rndf
   ```
@@ -54,10 +54,10 @@ rndf.readTextFile(elementId, callback(result)[, fileTypes, encoding])
 
 |参数							|类型			|描述																																															|
 |--								|--				|--																																																|
-|elementId				|String		|被点击的元素 ID																																										|
-|callback(result)	|Function	|成功读取文件的回调函数，包含一个存有文件内容的参数。																												|
-|fileTypes（可选） |String		|MIME 类型或文件扩展名，多个类型和扩展名之间用逗号分隔。。若该 JSON 文件的内容会自动转换为 JavaScript 对象或数组。	|
-|encoding（可选）	|String		|编码类型，默认为“utf-8”																																						|
+|elementId				|String		|被点击的元素 ID。																																									|
+|callback(result)	|Function	|成功读取文件的回调函数，包含一个存有文件内容的参数。																								|
+|fileTypes（可选）|String		|MIME 类型或文件扩展名，多个 MIME 类型和扩展名之间用逗号分隔。填入该参数后浏览器会默认限制用户可选的文件类型。若该参数为 'application/json' 或 '.json'，回调函数中的文件内容会自动转换为 JavaScript 对象或数组。|
+|encoding（可选）	|String		|编码类型，默认为“utf-8”。																																					|
 
 
 # 导出文件
@@ -70,9 +70,9 @@ rndf.downloadText(elementId, fileName, textString)
 
 |参数				|类型		|描述						|
 |--					|--			|--							|
-|elementId	|String	|被点击的元素 ID	|
-|fileName		|String	|导出文件的文件名	|
-|textString	|String	|导出文件的内容		|
+|elementId	|String	|被点击的元素 ID。	|
+|fileName		|String	|导出文件的文件名。|
+|textString	|String	|导出文件的内容。	|
 
 ## 导出 JSON 文件
 
@@ -82,8 +82,8 @@ rndf.downloadJSON(elementId, fileName, JSON_data)
 
 |参数			|类型						|描述												|
 |--				|--							|--													|
-|elementId|String					|被点击的元素 ID							|
-|fileName	|String					|导出文件的文件名							|
-|JSON_data|Object or Array|导出的 JavaScript 对象或数组	|
+|elementId|String					|被点击的元素 ID。						|
+|fileName	|String					|导出文件的文件名。						|
+|JSON_data|Object or Array|导出的 JavaScript 对象或数组。|
 
 
