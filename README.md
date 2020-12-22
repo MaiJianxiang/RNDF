@@ -100,5 +100,5 @@ RNDF 使用语义版本号来管理代码。语义版本号分为 X.Y.Z 三位�
 
 # 许可证
 
-本项目采用 [Mozilla Public License Version 2.0]() 进行许可。
+本项目采用 [Mozilla Public License Version 2.0](LICENSE) 进行许可。
 
