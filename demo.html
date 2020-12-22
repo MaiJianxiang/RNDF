@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="renderer" content="webkit"> <!-- 让360浏览器默认采用Webkit内核渲染渲染页面 -->
-    <script src="rndf.js" type="text/javascript" charset="utf-8"></script>
-	</head>
-	<body>
+  <head>
+    <meta name="renderer" content="webkit"> <!-- 让360浏览器默认采用Webkit内核渲染渲染页面 -->
+    <script src="rndf.js"></script> <!-- 引入 RNDF -->
+  </head>
+  <body>
+    
     <a id="a_downloadText">导出文本</a><br><br>
     <a id="a_downloadJSON">导出JSON</a><br><br>
     <a id="a_inputDate">导入数据</a><br>
-    
     
     <script type="text/javascript">
       
       let textString = 'abc123'
       let JSON_data = [{'aaa':1,'bbb':2},{'c':333,'d':444}]
       
+      // 导出纯文本文件
       rndf.downloadText('a_downloadText', '测试.txt', textString)
+      
+      // 导出 JSON 文件
       rndf.downloadJSON('a_downloadJSON', '测试.json', JSON_data)
       
+      // 导入文件并读取数据
       rndf.readTextFile('a_inputDate', function(result){
         console.log(result)
       }, '.json')
