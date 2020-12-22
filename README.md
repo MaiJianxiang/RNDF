@@ -79,7 +79,7 @@ rndf.downloadJSON(elementId, fileName, JSON_data)
 
 |IE			|Edge	|Chrome	|Firefox|Opera|Safari	|
 |--			|--		|--			|--			|--		|--			|
-|不支持	|79		|38			|28			|25		|10			|
+|不支持	|79		|49			|44			|36		|11			|
 
 表格中的数字表示支持本框架的浏览器的最低版本。RNDF 不支持 IE 浏览器和 Edge 18 及以下版本的浏览器。
 
