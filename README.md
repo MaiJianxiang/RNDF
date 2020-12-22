@@ -4,7 +4,7 @@ RNDF 是 Read and Download Files 的缩写，是一个 web 前端 JS 框架。�
 
 只需调用一个函数即可让用户选择本地文件并读取文件的数据，或生成文件让用户保存到本地。
 
-[示例]()
+[示例](demo.html)
 
 Other languages: pending translation
 
@@ -71,7 +71,7 @@ rndf.downloadJSON(elementId, fileName, JSON_data)
 |--				|--							|--													|
 |elementId|String					|被点击的元素 ID。						|
 |fileName	|String					|导出文件的文件名。						|
-|JSON_data|Object or Array|导出的 JavaScript 对象或数组。|
+|JSON_data|Object / Array|导出的 JavaScript 对象或数组。|
 
 # 兼容性
 
