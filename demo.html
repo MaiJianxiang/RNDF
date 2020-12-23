@@ -13,13 +13,13 @@
     <script type="text/javascript">
       
       let textString = 'This is the content of the exported text.'
-      let JSON_data = [{'aaa':111,'bbb':222},{'ccc':333,'ddd':444}]
+      let jsonData = [{'aaa':111,'bbb':222},{'ccc':333,'ddd':444}]
       
       // 导出纯文本文件
       rndf.downloadText('box_downloadText', '测试.txt', textString)
       
       // 导出 JSON 文件
-      rndf.downloadJSON('box_downloadJSON', '测试.json', JSON_data)
+      rndf.downloadJSON('box_downloadJSON', '测试.json', jsonData)
       
       // 导入文件并读取数据
       rndf.readTextFile('box_inputDate', function(result){
