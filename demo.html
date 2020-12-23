@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="renderer" content="webkit"> <!-- 让360浏览器默认采用Webkit内核渲染渲染页面 -->
+    <meta name="renderer" content="webkit"> <!-- 让 360 浏览器默认采用Webkit内核渲染渲染页面 -->
     <script src="./1.0.0/rndf.js"></script> <!-- 引入 RNDF -->
   </head>
   <body>
     
-    <div id="a_downloadText">导出文本</div>
-    <div id="a_downloadJSON">导出JSON</div>
-    <div id="a_inputDate">导入数据</div>
+    <div id="box_downloadText">导出文本</div>
+    <div id="box_downloadJSON">导出JSON</div>
+    <div id="box_inputDate">导入数据</div>
     
     <script type="text/javascript">
       
-      let textString = 'abc123'
-      let JSON_data = [{'aaa':1,'bbb':2},{'c':333,'d':444}]
+      let textString = 'This is the content of the exported text.'
+      let JSON_data = [{'aaa':111,'bbb':2222},{'ccc':333,'ddd':444}]
       
       // 导出纯文本文件
-      rndf.downloadText('a_downloadText', '测试.txt', textString)
+      rndf.downloadText('box_downloadText', '测试.txt', textString)
       
       // 导出 JSON 文件
-      rndf.downloadJSON('a_downloadJSON', '测试.json', JSON_data)
+      rndf.downloadJSON('box_downloadJSON', '测试.json', JSON_data)
       
       // 导入文件并读取数据
-      rndf.readTextFile('a_inputDate', function(result){
+      rndf.readTextFile('box_inputDate', function(result){
         console.log(result)
       }, '.json')
       
