@@ -1,3 +1,4 @@
+/* RNDF v1.0.0 | MPL-2.0 License | github.com/MaiJianxiang/RNDF */
 
 // rndf 是唯一的全局变量，后面所有要暴露的变量和方法都放在这个对象里
 const rndf = {
