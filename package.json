@@ -1,0 +1,25 @@
+{
+  "name": "rndf",
+  "version": "1.0.0",
+  "description": "A JS framework that makes the front-end read and download files simpler.",
+  "main": "rndf.min.js",
+  "files": ["rndf.min.js"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaiJianxiang/RNDF.git"
+  },
+  "keywords": [
+    "front-end",
+    "file",
+    "web"
+  ],
+  "author": "MaiJianxiang",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/MaiJianxiang/RNDF/issues"
+  },
+  "homepage": "https://github.com/MaiJianxiang/RNDF#readme"
+}

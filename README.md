@@ -16,9 +16,9 @@ Other languages: pending translation
 
 可以通过多种方法下载 RNDF：
 
-+ [从 Github 下载]()（准备中）
-+ [从 Gitee 下载]()（准备中）
-+ 使用 npm 命令下载（准备中）
++ [从 Github 下载](https://github.com/MaiJianxiang/RNDF/releases)
++ [从 Gitee 下载](https://gitee.com/MaiJianxiang/RNDF/releases)
++ 使用 npm 命令下载
   ```
   npm install rndf
   ```
