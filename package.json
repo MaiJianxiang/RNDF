@@ -1,6 +1,6 @@
 {
   "name": "rndf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JS framework that makes the front-end read and download files simpler.",
   "main": "rndf.min.js",
   "files": ["rndf.min.js"],
